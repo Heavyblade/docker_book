@@ -9,6 +9,7 @@ RUN apt-get install -yqq --no-install-recommends nodejs
 WORKDIR /home/rails
 
 COPY Gemfile /home/rails/Gemfile
+COPY Gemfile.lock /home/rails/Gemfile.lock
 
 RUN bundle install
 
