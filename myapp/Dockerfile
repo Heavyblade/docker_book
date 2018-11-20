@@ -19,4 +19,5 @@ RUN bundle install
 
 COPY . /home/rails
 
+ENTRYPOINT ["./docker-entrypoint.sh"]
 CMD ["rails", "s", "-b", "0.0.0.0"]
